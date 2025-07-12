@@ -1,0 +1,41 @@
+body {
+  background-color: #000;
+  color: gold;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1, h2 {
+  color: gold;
+}
+.btn {
+  background-color: gold;
+  color: black;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+}
+.flip-page {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.last-page {
+  text-align: center;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid gold;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #222;
+}
+

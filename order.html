@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pemesanan Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <h1>Daftar Menu</h1>
+    <table>
+      <thead>
+        <tr><th>Menu</th><th>Harga</th><th>Aksi</th></tr>
+      </thead>
+      <tbody id="menu-list"></tbody>
+    </table>
+
+    <h2>Keranjang</h2>
+    <table>
+      <thead>
+        <tr><th>Menu</th><th>Harga</th><th>Qty</th><th>Total</th><th>Aksi</th></tr>
+      </thead>
+      <tbody id="cart"></tbody>
+    </table>
+
+  <p>Total: <span id="total">Rp 0</span></p>
+
+  <h2>Data Pemesan</h2>
+<form id="order-form">
+  <label>Nama Pemesan: <input type="text" id="nama" required></label><br><br>
+  <label>Tanggal Memesan: <input type="date" id="tglPesan" required></label><br><br>
+  <label>Tanggal Acara / Dikirim: <input type="date" id="tglKirim" required></label><br><br>
+  <label>Waktu Acara: <input type="time" id="waktu" required></label><br><br>
+</form>
+
+
+  <button onclick="saveCart()">💾 Simpan</button>
+  <button onclick="sendToWA()">📤 Kirim ke WhatsApp</button>
+  <button onclick="downloadCart()">📥 Download</button>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
